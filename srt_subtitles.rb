@@ -3,6 +3,10 @@ module Subtitle
     @arr_dialog = []
     attr_reader :file
 
+    # documentacion
+    #
+    # @param [String] file the path of the file
+    
     def initialize(file)
       @file = IO.read(file).gsub(/\n|\r/, " ")
     end
